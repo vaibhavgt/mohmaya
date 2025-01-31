@@ -1,4 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <path d="M50 5 L90 90 L10 90 Z" fill="#2b6cb0"/>
-  <circle cx="50" cy="50" r="10" fill="white"/>
+  <!-- Stylized M with mountain motif -->
+  <path d="M10 90 L30 20 L50 55 L70 20 L90 90" stroke="#2b6cb0" stroke-width="8" fill="none"/>
+  <!-- Prayer flag accent -->
+  <rect x="0" y="10" width="20" height="2" fill="#e53e3e"/>
+  <rect x="20" y="10" width="20" height="2" fill="#ecc94b"/>
+  <rect x="40" y="10" width="20" height="2" fill="#48bb78"/>
+  <rect x="60" y="10" width="20" height="2" fill="#4299e1"/>
+  <rect x="80" y="10" width="20" height="2" fill="#ed64a6"/>
 </svg>
