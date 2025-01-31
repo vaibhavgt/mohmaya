@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trek Library | Himalayan Adventure Resources</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body class="bg-gray-50" onload="AOS.init()">
+    <div class="prayer-flag-border"></div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-xl font-bold text-gray-800">Trek Portfolio</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="index.html" class="text-gray-600 hover:text-gray-900">Home</a>
+                    <a href="#guides" class="text-gray-600 hover:text-gray-900">Guides</a>
+                    <a href="#videos" class="text-gray-600 hover:text-gray-900">Videos</a>
+                    <a href="#gallery" class="text-gray-600 hover:text-gray-900">Gallery</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative bg-gray-900 h-[60vh] overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="swiper heroSwiper h-full">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1626264146559-0b014c88f57e" alt="Mountain View" class="w-full h-full object-cover">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1623139185005-c3bea0ae06b0" alt="Trek Path" class="w-full h-full object-cover">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1622383563227-04401ab4e5ea" alt="Summit View" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="relative max-w-6xl mx-auto px-4 h-full flex items-center">
+            <div class="text-white" data-aos="fade-up">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">Trek Library</h1>
+                <p class="text-xl md:text-2xl mb-8">Your Complete Guide to Himalayan Adventures</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trek Guides Section -->
+    <div id="guides" class="py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">Trek Guides</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:-translate-y-2" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1551632811-561732d1e306" alt="Winter Treks" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                        <div class="text-white">
+                            <h3 class="text-xl font-bold mb-2">Winter Trek Guide</h3>
+                            <p class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">Complete guide to winter trekking in the Himalayas</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1626264146559-0b014c88f57e" alt="Equipment Guide" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                        <div class="text-white">
+                            <h3 class="text-xl font-bold mb-2">Equipment Guide</h3>
+                            <p class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">Essential gear for high-altitude trekking</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1623139185005-c3bea0ae06b0" alt="Safety Guide" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                        <div class="text-white">
+                            <h3 class="text-xl font-bold mb-2">Safety Guide</h3>
+                            <p class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">Mountain safety and emergency protocols</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Section -->
+    <div id="videos" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">Trek Videos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="aspect-video rounded-lg overflow-hidden shadow-lg" data-aos="fade-up">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="aspect-video rounded-lg overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Photo Gallery -->
+    <div id="gallery" class="py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">Photo Gallery</h2>
+            <div class="swiper gallerySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1626264146559-0b014c88f57e" alt="Gallery Image 1" class="w-full h-96 object-cover rounded-lg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1623139185005-c3bea0ae06b0" alt="Gallery Image 2" class="w-full h-96 object-cover rounded-lg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1622383563227-04401ab4e5ea" alt="Gallery Image 3" class="w-full h-96 object-cover rounded-lg">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; 2025 Trek Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Hero Slider
+        new Swiper(".heroSwiper", {
+            effect: "fade",
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+        // Gallery Slider
+        new Swiper(".gallerySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+</body>
+</html>
