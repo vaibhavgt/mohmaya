@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Private Customized Himalayan Treks in India | Luxury Trekking Tours</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <meta name="description" content="Experience exclusive, private Himalayan treks in India. Customized spiritual journeys including Char Dham Yatra, Kedarnath Trek & luxury adventure tours. Book your personal guide today!">
     <meta name="keywords" content="private treks india, customized himalayan tours, luxury trekking india, char dham yatra private tour, kedarnath private trek, exclusive indian pilgrimages">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100" onload="AOS.init()">
+    <div class="prayer-flag-border"></div>
     <!-- Navigation -->
     <nav class="bg-white shadow-lg">
         <div class="max-w-6xl mx-auto px-4">
@@ -31,7 +34,7 @@
         <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');"></div>
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div class="relative max-w-6xl mx-auto px-4 h-full flex items-center">
-            <div class="text-white">
+            <div class="text-white" data-aos="fade-up" data-aos-duration="1000">
                 <h1 class="text-4xl md:text-6xl font-bold mb-4">Exclusive Private Treks in the Indian Himalayas</h1>
                 <p class="text-xl md:text-2xl mb-8">Personalized Spiritual Journeys & Luxury Adventure Tours</p>
                 <p class="text-lg md:text-xl mb-8">Experience the sacred peaks and ancient pilgrimages of India with your private guide and customized itinerary</p>
@@ -46,7 +49,7 @@
         <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">Discover our carefully curated selection of premium Himalayan adventures, each fully customizable to your preferences. From spiritual pilgrimages to challenging peaks, experience India's most sacred locations in comfort and style.</p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Kedarkantha Winter Trek -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="trek-card bg-white rounded-lg shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="100">
                 <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3" alt="Kedarkantha Winter Trek" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Kedarkantha Winter Trek</h3>
@@ -251,6 +254,7 @@
         </div>
     </div>
 
+    <div class="mountain-divider"></div>
     <!-- Contact Section -->
     <div id="contact" class="bg-gray-900 text-white py-16">
         <div class="max-w-6xl mx-auto px-4">

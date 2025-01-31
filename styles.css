@@ -1,6 +1,98 @@
-/* Custom styles can be added here */
-.smooth-scroll {
+/* Himalayan Theme Colors */
+:root {
+    --snow-white: #f8f9fa;
+    --mountain-gray: #4a5568;
+    --prayer-blue: #2b6cb0;
+    --sunset-orange: #ed8936;
+    --pine-green: #2f855a;
+}
+
+/* Smooth Scrolling */
+html {
     scroll-behavior: smooth;
 }
 
-/* Add any additional custom styles as needed */
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatingMountains {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes shimmer {
+    0% { background-position: -1000px 0; }
+    100% { background-position: 1000px 0; }
+}
+
+/* Animated Elements */
+.animate-fade-in {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.animate-delay-1 { animation-delay: 0.2s; }
+.animate-delay-2 { animation-delay: 0.4s; }
+.animate-delay-3 { animation-delay: 0.6s; }
+
+.trek-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trek-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Himalayan Decorative Elements */
+.mountain-divider {
+    height: 50px;
+    background: linear-gradient(135deg, var(--snow-white) 25%, transparent 25%) -50px 0,
+                linear-gradient(225deg, var(--snow-white) 25%, transparent 25%) -50px 0,
+                linear-gradient(315deg, var(--snow-white) 25%, transparent 25%),
+                linear-gradient(45deg, var(--snow-white) 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: var(--mountain-gray);
+}
+
+.prayer-flag-border {
+    background: linear-gradient(90deg, 
+        #e53e3e 20%, /* Red */
+        #ecc94b 20%, /* Yellow */
+        #ecc94b 40%,
+        #48bb78 40%, /* Green */
+        #48bb78 60%,
+        #4299e1 60%, /* Blue */
+        #4299e1 80%,
+        #ed64a6 80% /* White */
+    );
+    height: 4px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--snow-white);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--mountain-gray);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--prayer-blue);
+}
