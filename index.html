@@ -23,15 +23,58 @@
                         <img src="logo.svg" alt="Mohmaya Logo" class="h-8 w-24">
                     </a>
                 </div>
+                <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-4">
                     <a href="#" class="text-gray-600 hover:text-gray-900">Home</a>
                     <a href="#treks" class="text-gray-600 hover:text-gray-900">Treks</a>
                     <a href="library.html" class="text-gray-600 hover:text-gray-900">Library</a>
                     <a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a>
                 </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path class="mobile-menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                            <path class="mobile-menu-close hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#" class="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md">Home</a>
+                <a href="#treks" class="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md">Treks</a>
+                <a href="library.html" class="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md">Library</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md">Contact</a>
             </div>
         </div>
     </nav>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
+        const mobileMenuClose = document.querySelector('.mobile-menu-close');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenuIcon.classList.toggle('hidden');
+            mobileMenuClose.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+                mobileMenuIcon.classList.remove('hidden');
+                mobileMenuClose.classList.add('hidden');
+            }
+        });
+    </script>
 
     <!-- Hero Section -->
     <div class="relative bg-gray-900 h-[60vh]">
