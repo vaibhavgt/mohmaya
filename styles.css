@@ -1,3 +1,6 @@
+/* Buddhist-inspired patterns */
+@import url('patterns.svg');
+
 /* Himalayan Theme Colors */
 :root {
     --snow-white: #f8f9fa;
@@ -77,6 +80,35 @@ html {
         #ed64a6 80% /* White */
     );
     height: 4px;
+}
+
+/* Buddhist-inspired Dividers */
+.dharma-divider {
+    height: 60px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60' viewBox='0 0 120 60'%3E%3Cpath d='M60,0 C40,0 20,20 0,20 L0,60 L120,60 L120,20 C100,20 80,0 60,0' fill='%232b6cb0' opacity='0.1'/%3E%3C/svg%3E") repeat-x;
+}
+
+.lotus-divider {
+    height: 40px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='40' viewBox='0 0 60 40'%3E%3Cpath d='M30,0 C40,10 50,10 60,0 C50,20 50,30 60,40 C40,30 30,30 20,40 C30,20 30,10 30,0' fill='%232b6cb0' opacity='0.1'/%3E%3C/svg%3E") repeat-x;
+}
+
+.endless-knot-divider {
+    height: 50px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='50' viewBox='0 0 100 50'%3E%3Cpath d='M20,25 C20,15 30,10 50,10 C70,10 80,15 80,25 C80,35 70,40 50,40 C30,40 20,35 20,25' fill='%232b6cb0' opacity='0.1'/%3E%3C/svg%3E") repeat-x;
+}
+
+/* Pattern Backgrounds */
+.dharma-pattern {
+    background-image: url(#dharma-wheel);
+}
+
+.lotus-pattern {
+    background-image: url(#lotus);
+}
+
+.endless-knot-pattern {
+    background-image: url(#endless-knot);
 }
 
 /* Custom Scrollbar */
