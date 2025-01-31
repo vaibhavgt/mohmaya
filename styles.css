@@ -104,6 +104,12 @@ html {
     background-image: url(#dharma-wheel);
 }
 
+.mandala-divider {
+    height: 80px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='80' viewBox='0 0 160 80'%3E%3Cpath d='M80,0 C100,20 100,60 80,80 C60,60 60,20 80,0 M40,40 C60,60 100,60 120,40 C100,20 60,20 40,40' fill='none' stroke='%234299e1' stroke-width='2' opacity='0.3'/%3E%3C/svg%3E") repeat-x;
+    backdrop-filter: blur(4px);
+}
+
 .lotus-pattern {
     background-image: url(#lotus);
 }
